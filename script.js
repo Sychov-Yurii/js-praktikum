@@ -82,3 +82,24 @@
 // }
 // console.log(`Transaction END`)
 
+// const clients = ["Mango", "Ajax", "Poly"];
+
+// for (const client of clients) {
+//   console.log(client);
+// }
+
+// const string = "javascript";
+
+// for (const character of string) {
+//   console.log(character);
+// }
+
+// const add = function (...args) {
+//     console.log(args);
+// };
+
+// console.log(add(1, 2, 3));
+// console.log(add(1, 2, 3, 4, 5));
+
+
+
