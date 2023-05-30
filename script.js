@@ -102,4 +102,41 @@
 // console.log(add(1, 2, 3, 4, 5));
 
 
+// const user = {
+//     name: `Test User`,
+//     getName() {
+//         console.log(user.name)
+//     }
+// }
 
+// const admin = {
+//     name: `Test admin`
+// }
+
+// console.log(this)
+// console.log(name)
+
+function getName() {
+    console.log(this.city);
+}
+
+getName()
+
+const user = {
+    name: `User`,
+    city: `Lviv`,
+    getThis() {
+        console.log(this)
+    }
+}
+
+user.getThis()
+const admin = {
+    name: `Admin`,
+    city: `Odessa`,
+    getThis: () => {
+        console.log(this)
+    }
+}
+
+admin.getThis
