@@ -103,40 +103,63 @@
 
 
 // const user = {
-//     name: `Test User`,
-//     getName() {
-//         console.log(user.name)
+// //     name: `Test User`,
+// //     getName() {
+// //         console.log(user.name)
+// //     }
+// // }
+
+// // const admin = {
+// //     name: `Test admin`
+// // }
+
+// // console.log(this)
+// // console.log(name)
+
+// function getName() {
+//     console.log(this.city);
+// }
+
+// getName()
+
+// const user = {
+//     name: `User`,
+//     city: `Lviv`,
+//     getThis() {
+//         console.log(this)
 //     }
 // }
 
+// user.getThis()
 // const admin = {
-//     name: `Test admin`
+//     name: `Admin`,
+//     city: `Odessa`,
+//     getThis: () => {
+//         console.log(this)
+//     }
 // }
 
-// console.log(this)
-// console.log(name)
+// admin.getThis
 
-function getName() {
-    console.log(this.city);
-}
-
-getName()
-
-const user = {
-    name: `User`,
-    city: `Lviv`,
-    getThis() {
-        console.log(this)
-    }
-}
-
-user.getThis()
-const admin = {
-    name: `Admin`,
-    city: `Odessa`,
-    getThis: () => {
-        console.log(this)
-    }
-}
-
-admin.getThis
+// const books = [
+//     { title: "The Last Kingdom", author: "Bernard Cornwell" },
+//     { title: "Beside Still Waters", author: "Robert Sheckley" },
+//     { title: "The Dream of a Ridiculous Man", author: "Fyodor Dostoevsky" },
+//     { title: "Redder Than Blood", author: "Tanith Lee" },
+//     { title: "Enemy of God", author: "Bernard Cornwell" }
+//   ];
+  
+//   const titles = books.map(book => book.title);
+  
+//   const books = [ 
+//     book1: { title: "The Last Kingdom", author: "Bernard Cornwell" },
+//     book2: { title: "Beside Still Waters", author: "Robert Sheckley" },
+//     book3: { title: "The Dream of a Ridiculous Man", author: "Fyodor Dostoevsky" },
+//     book4: { title: "Redder Than Blood", author: "Tanith Lee" },
+//     book5: { title: "Enemy of God", author: "Bernard Cornwell" }
+//   ];
+  
+//   const titles = Object.values(books).map(book => book.title);
+  
+const books = [
+];
