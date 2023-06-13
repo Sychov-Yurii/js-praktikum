@@ -161,5 +161,43 @@
   
 //   const titles = Object.values(books).map(book => book.title);
   
-const books = [
-];
+// const books = [
+// ];
+
+// const counter = {
+//     value: 0,
+//     increment(value) {
+//         console.log('increment -> this', this);
+//         this.value += value;
+//     },
+//     decrement(value) {
+//         console.log('decrement -> this', this);
+//         this.value -= value;
+//     }, 
+// };
+
+// const updateCounter = function (value, operation) {
+//     operation(value);
+// };
+
+// updateCounter(10, counter.increment)
+// updateCounter(5, counter.decrement);
+
+// const pizzaPalace = {
+//     pizzas: ["Supercheese", "Smoked", "Four meats"],
+//     // Change code below this line
+//     checkPizza(pizzaName) {
+//       return this.pizzas.includes(pizzaName);
+//     },
+//     order this.pizzaName {
+//       const isPizzaAvailable = this.pizzaName;
+  
+//       if (!isPizzaAvailable) {
+//         return `Sorry, there is no pizza named «${pizzaName}»`;
+//       }
+  
+//       return `Order accepted, preparing «${pizzaName}» pizza`;
+//     },
+//     // Change code above this line
+//   };
+  
