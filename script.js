@@ -342,5 +342,19 @@
 
 // console.dir(boxEl)
 
-
+function makeTransaction(pricePerDroid, orderedQuantity, customerCredits) {
+    let message;
+    // Change code below this line
+  let totalPrice = (pricePerDroid*orderedQuantity) - customerCredits;
+  let userTotal = 
+  
+    // Change code above this line
+    if (customerCredits > pricePerDroid) {
+      message = "Insufficient funds!";
+  
+    } else {
+      message = `You ordered ${orderedQuantity} droids, you have ${totalPrice} credits left`
+    }
+    return message;
+  }
 
