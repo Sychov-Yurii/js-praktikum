@@ -422,6 +422,61 @@
 //     return x;
 //   })(100)
 
-const mySet = new Set([1, 2, 1, 4, 3, 2]);
-const result = [...mySet];
-console.log(result);
+// const mySet = new Set([1, 2, 1, 4, 3, 2]);
+// const result = [...mySet];
+// console.log(result);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Напишіть дві функції
+// letMeSeeYourName(callback) - запитує ім'я користувача
+//через prompt та викликає callback функцію
+//greet(name) - коллбек, що приймає ім'я і логірує в консоль
+//Рядок "Привіт <name>"
+//Реалізуй перевірку, що prompt не порожній
+
+const letMeSeeYourName = (callback) => {
+    
+    const userName = prompt("enter your name") 
+    if (!userName) {
+        return;
+    } 
+    callback(userName);   
+
+}
+const greet = (name) => {
+    console.log(`Привіт ${name}`);
+} 
+
+
+
+letMeSeeYourName(greet) 
