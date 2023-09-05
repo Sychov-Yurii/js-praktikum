@@ -464,19 +464,30 @@
 //Рядок "Привіт <name>"
 //Реалізуй перевірку, що prompt не порожній
 
-const letMeSeeYourName = (callback) => {
+// const letMeSeeYourName = (callback) => {
     
-    const userName = prompt("enter your name") 
-    if (!userName) {
-        return;
-    } 
-    callback(userName);   
+//     const userName = prompt("enter your name") 
+//     if (!userName) {
+//         return;
+//     } 
+//     callback(userName);   
 
-}
-const greet = (name) => {
-    console.log(`Привіт ${name}`);
-} 
+// }
+// const greet = (name) => {
+//     console.log(`Привіт ${name}`);
+// } 
 
 
 
-letMeSeeYourName(greet) 
+// letMeSeeYourName(greet) 
+
+
+
+const object = {
+    message: "Hello world",
+    getMessage() {
+        const message = "Hello, Earth";
+        return this.message;
+    }, 
+};
+console.log(object.getMessage());
