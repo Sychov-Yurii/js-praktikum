@@ -429,7 +429,14 @@
 
 
 
+const person = { name: 'Mango' };
 
+function sayHi(age) {
+    return `${this.name} is ${age}`
+}
+
+console.log(sayHi.call(person, 18));
+console.log(sayHi.bind(person, 18));
 
 
 
@@ -483,11 +490,11 @@
 
 
 
-const object = {
-    message: "Hello world",
-    getMessage() {
-        const message = "Hello, Earth";
-        return this.message;
-    }, 
-};
-console.log(object.getMessage());
+// const object = {
+//     message: "Hello world",
+//     getMessage() {
+//         const message = "Hello, Earth";
+//         return this.message;
+//     }, 
+// };
+// console.log(object.getMessage());
