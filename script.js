@@ -429,39 +429,14 @@
 
 
 
-const person = { name: 'Mango' };
+// const person = { name: 'Mango' };
 
-function sayHi(age) {
-    return `${this.name} is ${age}`
-}
+// function sayHi(age) {
+//     return `${this.name} is ${age}`
+// }
 
-console.log(sayHi.call(person, 18));
-console.log(sayHi.bind(person, 18));
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// console.log(sayHi.call(person, 18));
+// console.log(sayHi.bind(person, 18));
 
 
 //Напишіть дві функції
@@ -498,3 +473,52 @@ console.log(sayHi.bind(person, 18));
 //     }, 
 // };
 // console.log(object.getMessage());
+
+
+
+
+
+
+// const vehicles = [
+//     { make: "Honda", model: "CR-V", type: "suv", price: 24045 },
+//     { make: "Honda", model: "Accord", type: "sedan", price: 22455 },
+//     { make: "Mazda", model: "Mazda 6", type: "sedan", price: 24195 },
+//     { make: "Mazda", model: "CX-9", type: "suv", price: 31520 },
+//     { make: "Toyota", model: "4Runner", type: "suv", price: 34210 },
+//     { make: "Toyota", model: "Sequoia", type: "suv", price: 45560 },
+//     { make: "Toyota", model: "Tacoma", type: "truck", price: 24320 },
+//     { make: "Ford", model: "F-150", type: "truck", price: 27110 },
+//     { make: "Ford", model: "Fusion", type: "sedan", price: 22120 },
+//     { make: "Ford", model: "Explorer", type: "suv", price: 31660 },
+//   ];
+
+//   class CarsManager {
+//     #cars;
+//     constructor(cars=[]) {
+//         this.#cars = cars;
+//     }
+//     get cars() {
+//         console.log(vehicles === this.#cars);
+//         return this.#cars;
+//     }
+
+//     getModels() {
+//         return this.#cars.map((car)=>{
+//             return car.model;
+//         })
+//     }
+
+//     getTotalPrice() {
+//         return this.#cars.reduce((acc, car) => {
+//             return acc + car.price;
+//         },0)
+//     }
+ 
+//   }
+//   const carsManager = new CarsManager(vehicles);
+//   console.log(carsManager.cars);
+//   console.log(carsManager.getModels());
+//   console.log(carsManager.getTotalPrice());
+
+
+
