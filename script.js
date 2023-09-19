@@ -520,5 +520,44 @@
 //   console.log(carsManager.getModels());
 //   console.log(carsManager.getTotalPrice());
 
-
-
+class User {
+    email;
+  
+    constructor(email) {
+      this.email = email;
+    }
+  
+    get email() {
+      return this._email;
+    }
+  
+    /**
+     * @param {any} newEmail
+     */
+    set email(newEmail) {
+        this._email = newEmail;
+    }
+  }
+  
+  class Admin extends User {
+    // Change code below this line
+    static AccessLevel = {
+      BASIC: "basic",
+      SUPERUSER: "superuser",
+    };
+    construktor({ email, accessLevel }) {
+      super(email);
+      this.accessLevel = accessLevel;
+    } 
+  
+    // Change code above this line
+  }
+  
+  const mango = new Admin({
+    email: "mango@mail.com",
+    accessLevel: Admin.AccessLevel.SUPERUSER,
+  });
+  
+  console.log(mango.email); // "mango@mail.com"
+  console.log(mango.accessLevel); // "superuser"
+  
