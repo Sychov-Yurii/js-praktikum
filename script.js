@@ -584,3 +584,86 @@
 // const firstMenuItem = document.querySelector(".menu-item");
 // firstMenuItem.style.color = 'tomato';
 // console.log(firstMenuItem);
+
+
+
+
+
+// Задача 111
+// <div>
+//       <p class="taskTitle">ЗАДАЧА 1</p>
+//       <button id="alertButton">SHOW ME</button>
+//       <input id="alertInput" type="text" />
+//     </div>
+// Натискання на кнопку "SHOW ME" має виводити значення з поля введення (дивіться на елементи в html-розмітці)
+
+// const refs = {
+//     outputText: document.querySelector('#outputText'),
+//     alertButton: document.querySelector('#alertButton'),
+//     alertInput: document.querySelector('#alertInput'),
+// };
+
+// refs.alertButton.addEventListener('click', onAlertButtonClick);
+// function onAlertButtonClick(evt) {
+//     console.log(evt);
+//     refs.outputText.textContent = refs.alertInput.value;
+// }
+
+
+// <div>
+//       <p class="taskTitle">ЗАДАЧА 2</p>
+//       <button id="swapButton">SWAP ME</button>
+//       <input id="leftSwapInput" type="text" value="???" />
+//       <input id="rightSwapInput" type="text" value="!!!" />
+//     </div>
+// Після натискання кнопки "SWAP ME" здійснюється обмін вмістом між двома інпутами.
+// Ви можете натиснути на неї кілька разів або вручну змінити вміст інпутів.
+
+// const refs = {
+//     leftSwapInput: document.querySelector('#leftSwapInput'),
+//     rightSwapInput: document.querySelector('#rightSwapInput'),
+//     swapButton: document.querySelector('#swapButton'),
+// };
+
+// refs.swapButton.addEventListener('click', onSwapButtonClick);
+
+// function onSwapButtonClick(evt) {
+//     const leftSwapInputValue = refs.leftSwapInput.value;
+//     const rightSwapInputValue = refs.rightSwapInput.value;
+
+//     refs.leftSwapInput.value = rightSwapInputValue;
+//     refs.rightSwapInput.value = leftSwapInputValue;
+// }
+
+
+
+//  <div>
+// <p class="taskTitle">ЗАДАЧА 113</p>
+// <input id="passwordInput" type="text" />
+// <button id="passwordButton">Приховати</button>
+// </div>
+
+// Кнопка "Приховати" ховає текст і замінює назву кнопки на
+// "Розкрити", при повторному натисканні текст знову стає доступним
+// і кнопка набуває початкового вигляду. 
+
+// const refs = {
+//     taskTitle: document.querySelector('.taskTitle'),
+//     passwordInput: document.querySelector('#passwordInput'),
+//     passwordButton: document.querySelector('#passwordButton'),
+// };
+
+// refs.passwordButton.addEventListener('click', onPasswordButtonClick);
+
+// function onPasswordButtonClick (evt) {
+
+//     if (evt.currentTarget.textContent === "Розкрити") {
+//         refs.taskTitle.style.display = "block";
+//         refs.passwordButton.textContent = "Приховати";
+//         return;
+//     }
+
+//     refs.taskTitle.style.display = "none";
+//     refs.passwordButton.textContent = "Розкрити";
+
+// };
