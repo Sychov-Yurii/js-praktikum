@@ -668,4 +668,10 @@
 
 // };
 
+const elements = {
+    form: document.querySelector('.js-search'),
+    formContainer: document.querySelector('.js-form-container'),
+    list: document.querySelector('.js-list'),
+    addField: document.querySelector('')
+}
 
